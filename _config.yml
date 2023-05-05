@@ -3,17 +3,20 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
+title: 伴
+subtitle: '湖边有草，伴水而生'
+description: '记录那些钻「牛角尖」的故事。'
+keywords: 
+author: Silver
+language: zh-CN
 timezone: ''
+
+
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://yinlongcoding.github.io
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -97,9 +100,53 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
+theme_config:
+  scheme: Gemini
+  # menu
+  menu:
+    home: / || fa fa-home
+    #about: /about/ || fa fa-user
+    tags: /tags/ || fa fa-tags
+    categories: /categories/ || fa fa-th
+    archives: /archives/ || fa fa-archive
+    schedule: /schedule/ || fa fa-calendar
+    sitemap: /sitemap.xml || fa fa-sitemap
+    commonweal: /404/ || fa fa-heartbeat
 
+  # Enable / Disable menu icons / item badges.
+  menu_settings:
+    icons: true
+    badges: true
+
+  # Sidebar Avatar
+  avatar:
+    # Replace the default image and set the url here.
+    url: https://s1.ax1x.com/2023/05/05/p9U9TgA.jpg
+    # If true, the avatar will be displayed in circle.
+    rounded: true
+    # If true, the avatar will be rotated with the cursor.
+    rotated: false
+  # Posts / Categories / Tags in sidebar.
+  site_state: false
+
+  # Social Links
+# Usage: `Key: permalink || icon`
+# Key is the link label showing to end users.
+# Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
+  social:
+    GitHub: https://github.com/Yinlongcoding || fab fa-github
+    E-Mail: mailto:wnhoper@gamil.com || fa fa-envelope
+    #Weibo: https://weibo.com/yourname || fab fa-weibo
+    #Google: https://plus.google.com/yourname || fab fa-google
+    #Twitter: https://twitter.com/yourname || fab fa-twitter
+    #FB Page: https://www.facebook.com/yourname || fab fa-facebook
+    #StackOverflow: https://stackoverflow.com/yourname || fab fa-stack-overflow
+    #YouTube: https://youtube.com/yourname || fab fa-youtube
+    #Instagram: https://instagram.com/yourname || fab fa-instagram
+    #Skype: skype:yourname?call|chat || fab fa-skype
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: git@github.com:Yinlongcoding/blog.git
